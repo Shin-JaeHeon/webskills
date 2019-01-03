@@ -1,0 +1,56 @@
+/* layout */
+*{margin:0;padding:0;}
+body{line-height: 1;overflow-x: hidden;}
+ul, li{list-style: none;}
+a{text-decoration: none;color:inherit;}
+th,strong,h1,h2,h3,h4,h5,h6{font-weight:100}
+th,td{border-left:none;border-right: none;border-bottom: #e3e3e3 solid 1px;}
+th{padding:12px 20px;}
+td{height:61px;}
+table{border-collapse: collapse;}
+button,input{
+	border:none;	
+}
+
+.top-nav{color:white;width:100vw;height:60px;background: url(../img/img-background.jpg) no-repeat center / cover}
+.top-nav li{display: inline-flex;}
+.logo{margin: 12px 14px 12px 38px;width:39px;height:36px;}
+
+.side-nav{background: #3a3633;width:220px;height:2192px;color:#c0bbb7;font-size:14px;background: url(../img/side-nav.jpg) no-repeat center / cover}
+.side-nav li{border-image: url(../img/side-nav.jpg);border-top:3px solid transparent; font-size:14px;padding:10px 23px 10px 10px; }
+.side-nav li>.container{justify-content: space-between;}
+.btn-name{padding-left: 12px;}
+.icon{width: auto;}
+.arrow-right{background: url(../img/angle-right.png);width: 9px;height:13px;}
+.btn-name{}
+
+
+.container{display: flex;}
+.list-container{margin-bottom: 15px;padding-top: 15px;}
+article{width:990px; padding:31px 0 221px 30px;}
+article>h2{ font-size:36px; } 
+.sub-title{ border: #f9dd34 1px solid; border-radius: 5px; padding: 12px 0 12px 10px; background: #fff2a0; margin-bottom: 15px}
+table{border-top:#666 1px solid;}
+th{background: #f8f8f8;}
+table tr td:nth-child(1){background: #f8f8f8;padding-left: 20px; width: 110px}
+table tr td:nth-child(n+2){width:325px;padding-left: 8px;}
+table tr td .button{
+	padding:10px;
+	border-radius: 5px
+}
+table tr td:nth-child(3) .button{
+	padding-top:5px;
+	padding-bottom :5px;
+}
+table tr td:nth-child(4).button{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.list-container:nth-child(2) .button{ background: #f7f7f7; }
+.list-container:nth-child(3) .button{ background: #ffea00; }
+.list-container:nth-child(4) .button{ background: #493334;color:white; }
+.list-container:nth-child(5) .button{ background: #ff5b49;color:white; }
+.list-container:nth-child(6) .button{ background: #0dc5b9;color:white; }
+.list-container:nth-child(7) .button{ background: #4aaded;color:white; }
+footer{background: url(../img/footer-background.png) no-repeat center / cover;color:white;font-size:12px; height:71px; width: 100vw;}
+footer>p{padding:30px 0 30px 16px;}
