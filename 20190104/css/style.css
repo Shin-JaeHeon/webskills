@@ -1,9 +1,9 @@
 /* settings */
 * { padding: 0; margin: 0; font-weight: 100;}
-body {font-family: 'NanumBarunGothic', 'Nanum Barun Gothic', serif}
+body {font-family: 'NanumBarunGothic', 'Nanum Barun Gothic', serif;overflow-x: hidden;}
 ul, li { list-style: none}
 a {text-decoration: none;color: inherit}
-img {width: inherit;height: inherit;}
+img { /* width: inherit; *//* height: inherit; */}
 strong {font-weight: 700;}
 /* common */
 .warp {}
@@ -56,13 +56,30 @@ strong {font-weight: 700;}
 .desc {font-size: 17px; opacity: 0.7;}
 .tags {color: #e50100;font-weight: 700;font-size: 12px;}
 /*     */
-.food-container ul{ display: flex;flex-wrap: wrap;}
-.food {width: 285px;height: 285px;}
-.food .picture {overflow: hidden;}
-.long-height{height: 595px;}
-.long-width{width: 595px;}
+.food-container {display: block;}
+.food-cards { display: flex; flex-flow: wrap;justify-content: center;}
+.food {overflow: hidden; position: relative;width: 285px;height: 285px; margin: 13px;}
+.long-height {height: 595px;}
+.long-width {width: 595px;}
+.long-height .picture {height: 595px;}
+.long-width .picture { width: 595px;}
+.food:nth-child(1) {background: url(../img/food1.jpg) no-repeat center / cover;}
+.food:nth-child(2) {background: url(../img/food2.jpg) no-repeat center / cover;}
+.food:nth-child(3) {background: url(../img/food3.jpg) no-repeat center / cover;}
+.food:nth-child(4) {background: url(../img/food4.jpg) no-repeat center / cover;}
+.food:nth-child(5) {background: url(../img/food5.jpg) no-repeat center / cover;}
+.food:nth-child(6) {background: url(../img/food6.jpg) no-repeat center / cover;margin-top: -297px; }
+.food:nth-child(7) {background: url(../img/food7.jpg) no-repeat center / cover;}
+.food:nth-child(8) {background: url(../img/food8.jpg) no-repeat center / cover;}
+.food:nth-child(9) {background: url(../img/food9.jpg) no-repeat center / cover;}
+.food:nth-child(10) {background: url(../img/food10.jpg) no-repeat center / cover;}
+.food .info {background: rgba(0, 0, 0, 0.75);height: 123px;position: absolute; top: calc(100% - 155px);bottom: 0;left: 0;right: 0;color: white;transition: 0.5s;}
+.food p {display: none; transition: .5s; letter-spacing: .5px;}
+.food:hover .info {height: 100%;top: 0;}
+.food:hover p {display: block;margin-top: 30px;}
 /*    */
 .middle-card { width: 33.333%;height: 670px;display: flex;align-items: center;justify-content: center;transition: 0.5s}
+.middle-card:hover {width: 100%;}
 .middle-card:nth-child(1) {background: url(../img/middle1.jpg) no-repeat center / cover;}
 .middle-card:nth-child(2) {background: url(../img/middle2.jpg) no-repeat center / cover;}
 .middle-card:nth-child(3) {background: url(../img/middle3.jpg) no-repeat center / cover;}
